@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script defer src="./LoginAuth.js"></script>
+</head>
+<body>
+    <div class="heading">
+    <h1 class="Heading">LOGIN</h1>
+ </div>
+ <div class="form">
+    <form action="Dashboard.html" class="loginForm">
+        <div class="Form-container">
+            <div class="input1">
+                <label>Username :</label>
+                <input id="username" type="text" value="" placeholder="Username.." />
+                <script>localStorage.setItem("Username",`${document.getElementById("username")}`)</script>
+                <span class="user-error-message"></span>
+            </div>
+        </br>
+            <label>Password :</label>    
+            <input type="password" id="password" value=""/>
+            <span class="error-message"></span>
+        </br></br>
+            <button type="submit">Login</button>
+
+        </div>
+
+    </form>
+
+ </div>
+</body>
+</html>
